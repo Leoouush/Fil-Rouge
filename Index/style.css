@@ -1,0 +1,565 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.flex {
+    display: flex;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    color: #F5F5F5;
+    background-color: #3C4647;
+    font-family: 'Dosis', sans-serif;
+} 
+
+
+/* Textes / Titre */
+
+nav>a,
+#Exploration>a{
+    color: #F5F5F5; 
+    
+}
+
+h1{
+    color:#F0E4BE;
+}
+.big{
+    font-size: 60px;
+}
+#Personnalite>h2>a, #Exploration>h2>a, #Exploration>p, #Contact>h2>a{
+    color:#F0E4BE;
+}
+
+#intro>article>h2>a,#DeNosJours>article>h2>a{
+    color:#3C4647
+}
+.centre {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    color:#F0E4BE;
+}
+/* Accueil */
+
+#accueil{
+    height: 106vh;
+    width: 100%;
+    
+    background: url(Images/acceuilpic.png) no-repeat top right;
+}
+.cacher{
+    display: none;
+}
+nav {
+    justify-content: center;
+    padding-top: 62px;
+    /* padding-left: 274px; */
+    gap: 30px;
+}
+.burger{
+    display: none;
+}
+h1{
+    font-size: clamp(50px,6vw,144px);
+    line-height: 1.9;
+    margin-left: 17vh;
+    margin-top: 19vh;
+}
+
+span{
+    font-weight: 300;
+    font-size: clamp(50px,6vw,110px);
+}
+
+
+/*Section Introduction */
+#intro{
+    height: 110vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+#intro>article>h2>a{
+    font-size: clamp(40px,6vw,60px);
+    
+}
+
+.article1{
+    width: min(119vh,80%);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top:7vh;
+    color:#3C4647 ;
+
+}
+#intro article p{
+    
+    height: 50vh;
+    background-color: #F5F5F5;
+    text-align: left;
+    line-height: 1.3;
+    font-size: clamp(16px,3vw,25px);
+    
+    
+}
+#intro article h2 {
+    display: flex;
+    align-self: flex-start;
+
+}
+
+.box1{
+    height: 100%; 
+    width: min(90vh,60%);
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    background: rgba(227, 80, 66, 0.9);
+}
+
+.index1{
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    
+}
+
+
+
+/* Section Personnalitées */
+
+#Personnalite {
+    height: 141vh;
+    margin-top: 20vh;
+    
+}
+.boxmere{
+    margin-top: 5vh;
+    justify-content: center;
+    justify-content: space-evenly; 
+}
+.box-front>p{
+    
+    color: #F5F5F5;
+    margin-top: 25px;
+}
+.box {
+    
+    background-color: transparent;
+    width: min(57vh,90%);
+    height: 80vh;
+    perspective: 1000px;
+    }
+    .box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    }
+    .box:hover .box-inner {
+    transform: rotateY(180deg);
+    }
+    .box-front, .box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    }
+    .box-front {
+    background-color: #cccccc;
+    color: #111111;
+    }
+    .box-back {
+    background-color: #F5F5F5;
+    color: #3C4647;
+    transform: rotateY(180deg);
+    text-align: left;
+    line-height: 140%;
+    font-size: clamp(15px,1vw,18px);
+    border: 10px solid rgba(227, 80, 66, 0.9);
+    }
+    .back1{
+        padding: 68px 19px;
+    }
+    .back2{
+        padding: 55px 19px;
+    }
+    .back3{
+        padding: 63px 18px;
+    }
+    .span{
+        font-weight: 700;
+        font-size: clamp(20px,1vw,25px);
+    }
+    
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    /* Section De Nos Jours */
+
+#DeNosJours{
+    height: 110vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+#DeNosJours>article>h2>a{
+    font-size: clamp(40px,6vw,60px);
+    
+}
+.article2{
+    width: min(119vh,80%);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+    color:#3C4647 ;
+}
+#DeNosJours article p{
+    height: 67vh;
+    background-color: #F5F5F5;
+    text-align: left;
+    line-height: 1.3;
+    font-size: clamp(16px,3vw,25px);
+}
+#DeNosJours> article> h2{
+    display: flex;
+    align-self: flex-end;
+
+}
+
+.box2{
+    height: 100%; 
+    width: min(90vh,60%);
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background: rgba(227, 80, 66, 0.9);
+}
+.index2{
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    
+}
+
+
+/* Section Exploration */
+
+
+#Exploration{
+    text-align: center;
+}
+#Exploration>h2{
+    font-size: clamp(20px,6vw,60p);
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+    margin-left: 13vh;
+}
+#Exploration>div>figure>img{
+    display: flex;
+    justify-content: center;
+}
+#Exploration>p{
+    font-size: 50px;
+    margin-bottom: 63px;
+    color: #F0E4BE;
+}
+#Exploration>a{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 13vh;
+    font-size: 40px;
+}
+.portrait{
+    width: 100%;
+    gap: 27vh;
+    margin-bottom: 20vh;
+    margin-top: 21vh;
+}
+figcaption{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(20px,3vw,40px);
+}
+
+/* Section Contact */
+
+#Contact{
+    height: 90vh;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    z-index: -1;
+}
+.box4{
+    height: 100%; 
+    width: min(85vh,50%);
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    background: rgba(227, 80, 66, 0.9);
+}
+#Contact h2{
+    margin-right: 29vh;
+}
+.cont{
+    margin-top: 11vh;
+    display: flex;
+    align-self: center;
+    gap: 47vh;
+}
+.formulaire{
+    justify-content: flex-end;
+    height: 52vh;  
+} 
+input, textarea{
+    border: 1px solid black;  
+    font-size: 2vh;
+    font-family: 'Dosis',sans-serif;
+    padding-left: 1vh;
+    padding-top: 1vh;
+}
+form{
+    display: flex;
+    justify-content: center; 
+}
+.taillef{
+    width: 69vh;
+    height: 7vh;
+    margin-bottom: 2vh; 
+}
+.bouton{
+    width: 21vh;
+    height: 7vh;
+    margin-top: 7vh;
+    border-radius: 4vh;
+    border: none;
+    background: #e35042;
+    color: #F5F5F5;
+
+}
+.bouton1{
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+
+footer>p{
+    text-align: center;
+    margin-top: 15vh;
+    margin-bottom: 11vh;
+    color:#F0E4BE;
+}
+
+
+
+/************************************************************/
+/***************************Media Queris********************/
+
+@media(max-width:1250px){
+
+
+
+#accueil, #intro, #Personnalite, #DeNosJours,#Exploration, #Contact{
+    height: auto;
+}
+
+/* Introduction */
+
+#intro{
+    width: 200%;
+}
+ #intro>article>h2 {
+    display: flex;
+}
+
+.article1{
+    display: flex;
+    justify-content: center;
+    height: 74vh;
+}
+#intro article p{
+    justify-content: center;
+    height: 40vh;
+}
+.box1{
+    width: min(90vh,40%);
+}
+    /* Personnalités */
+#Personnalite{
+    height: auto;
+    width: 200%;
+    margin-bottom: 4vh;
+}
+.boxmere{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15vh;
+}
+.box:target .box-inner {
+    transform: rotateY(180deg);
+    }
+
+
+
+/* De Nos Jours */
+
+#DeNosJours{
+    width: 200%;
+    height: auto;
+    margin-top: 20vh;
+}
+
+.article2{
+    height: 74vh;
+}
+
+#DeNosJours article p{
+    height: 40vh;
+}
+.box2{
+    width: min(90vh,50%);
+    height: 100%;
+}
+
+
+/* Exploration */
+#Exploration{
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+}
+
+.portrait{
+    width: min(180px,100%);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Contact */
+#Contact{
+    width: 200%;
+}
+.cont{
+    gap: 13vh;
+}
+
+#Contact h2, .cont{
+    display: flex;
+    flex-direction: column;
+    gap: none;
+}
+
+.box4{
+    display: none;
+}
+.burger{
+    display: block;
+    cursor: pointer;
+    /* position: absolute; */
+    z-index: 1;
+}
+header,
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    width: 90%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    margin-top: 10%;
+}
+
+.burger span {
+    height: 5px;
+    width: 40px;
+    background: #fff;
+    margin: 6px 0;
+    display: block;
+}
+
+.burger {display: block;
+    /* position: absolute; */
+    z-index: 2;
+}
+
+
+
+nav {
+    z-index: 0;
+    background: #3C4647;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: .5s;
+    font-size: 3em;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-open {
+    transform: translateX(0);
+}
+
+}
+@media(max-width:680px){
+    
+
+.cacher{
+    display: block;
+    justify-content: center;
+    top: 0;
+    right: 0;
+}
+#accueil{
+
+    background: none;
+    
+
+}
+
